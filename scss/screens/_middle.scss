@@ -1,0 +1,51 @@
+@media screen and (max-width: 960px){
+  body{
+    .form-container{
+      max-width: none;
+    }
+    main{
+      .content{
+        width: 100%;
+      }
+      .sec-2{
+        .w-50{
+          width: 100%;
+        }
+      }
+      aside.sidebar{
+        width: 100%;
+        max-width: 100%;
+        position: fixed;
+        visibility: hidden;
+        .mobile-head{
+          padding: 0 24px;
+          margin: 24px 0;
+          display: flex;
+          justify-content: space-between;
+          button{
+            position: relative;
+            top: -24px;
+            right: -2px;
+            .iconset{
+              width: 32px;
+              height: 32px;
+            }
+          }
+          h3{
+            font-size: 32px;
+          }
+        }
+        &.active{
+          visibility: visible;
+          //padding-top: 48px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 960px){
+  .d-lg-none{
+    display: none!important;
+  }
+}
